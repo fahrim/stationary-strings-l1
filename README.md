@@ -55,7 +55,7 @@ the detected counts and the separation statistics.
   author = {Fahri Meral},
   title  = {The Three-Photon Positronium Spectrum: a Correction to arXiv:2605.21289 Eq. (12) and a One-Hour Laboratory Test},
   year   = {2026},
-  url    = {https://github.com/fahrim/stationary-strings-l1}
+  url    = {https://github.com/fahrim/stationary-strings-l1},
   doi    = {10.5281/zenodo.23517487},
 }
 ```

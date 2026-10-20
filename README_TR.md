@@ -53,7 +53,7 @@ hesaplar.
   author = {Fahri Meral},
   title  = {Üç-Foton Pozitronyum Spektrumu: arXiv:2605.21289 Denk. (12)'nin Düzeltmesi ve Bir Saatlik Laboratuvar Testi},
   year   = {2026},
-  url    = {https://github.com/fahrim/stationary-strings-l1}
+  url    = {https://github.com/fahrim/stationary-strings-l1},
   doi    = {10.5281/zenodo.23517487},
 }
 ```
