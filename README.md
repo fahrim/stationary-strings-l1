@@ -1,12 +1,12 @@
-# Grand Proof L1 — Sodium-22 Positronium Laboratory Test
+# Stationary Strings Letter 1 — Sodium-22 Positronium Laboratory Test
 
 > **Türkçe:** [README_TR.md](./README_TR.md)
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-**L1: The Three-Photon Positronium Spectrum — a Correction to arXiv:2605.21289 Eq. (12) and a One-Hour Laboratory Test**
+**SS-L1: The Three-Photon Positronium Spectrum — a Correction to arXiv:2605.21289 Eq. (12) and a One-Hour Laboratory Test**
 
-Author: Fahri Meral · Date: October 20, 2026 · Version: v1 (L1)
+Author: Fahri Meral · Date: October 20, 2026 · Version: v1 (SS-L1)
 
 > **Status:** Unpublished preprint (v1). Not peer-reviewed. *Zenodo DOI pending deposit.*
 
@@ -31,15 +31,15 @@ R = N[10,100] / N[350,490].
   The table in the paper gives the **predicted** outcome of the proposed
   protocol so that the test can be executed and compared.
 - **Independent of the rest of the series:** no model, lock or ansatz of
-  Theorems I–X / Grand Proof I–III enters this letter. That is why it
-  is submitted separately.
+  Theorems I–X or Stationary Strings XII–XIV enters this letter. That is
+  why it is submitted separately.
 
 ## Contents
 
 | File | Description |
 |---|---|
-| `paper/na22_positronium_lab_test_EN.tex` | Letter, English (Table 1, 6 sections) |
-| `paper/na22_positronium_lab_test_TR.tex` | Turkish version |
+| `paper/stationary_strings_L1_na22_EN.tex` | Letter, English (Table 1, 6 sections) |
+| `paper/stationary_strings_L1_na22_TR.tex` | Turkish version |
 | `CITATION.cff` | Citation record |
 | `LICENSE` | CC BY 4.0 |
 
@@ -55,7 +55,7 @@ the detected counts and the separation statistics.
   author = {Fahri Meral},
   title  = {The Three-Photon Positronium Spectrum: a Correction to arXiv:2605.21289 Eq. (12) and a One-Hour Laboratory Test},
   year   = {2026},
-  url    = {https://github.com/fahrim/grand-proof-l1-na22}
+  url    = {https://github.com/fahrim/stationary-strings-l1}
 }
 ```
 

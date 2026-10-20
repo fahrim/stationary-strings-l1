@@ -1,12 +1,12 @@
-# Grand Proof L1 — Sodyum-22 Pozitronyum Laboratuvar Testi
+# Stationary Strings Letter 1 — Sodyum-22 Pozitronyum Laboratuvar Testi
 
 > **English:** [README.md](./README.md)
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-**L1: Üç-Foton Pozitronyum Spektrumu — arXiv:2605.21289 Denk. (12)'nin Düzeltmesi ve Bir Saatlik Laboratuvar Testi**
+**SS-L1: Üç-Foton Pozitronyum Spektrumu — arXiv:2605.21289 Denk. (12)'nin Düzeltmesi ve Bir Saatlik Laboratuvar Testi**
 
-Yazar: Fahri Meral · Tarih: 20 Ekim 2026 · Sürüm: v1 (L1)
+Yazar: Fahri Meral · Tarih: 20 Ekim 2026 · Sürüm: v1 (SS-L1)
 
 > **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *Zenodo DOI'si yüklemeyi bekliyor.*
 
@@ -28,15 +28,15 @@ oranında **7,8×10⁵ standart sapma** ile ayırır
 - **İddia edilmiyor:** ölçümün yapıldığı. Yapılmamıştır. Makaledeki tablo
   önerilen protokolün **öngörülen** sonucunu verir; testin yürütülüp
   karşılaştırılabilmesi için.
-- **Seriden bağımsızdır:** Teoremler I–X / Grand Proof I–III'ün hiçbir
+- **Seriden bağımsızdır:** Teoremler I–X'in ya da Stationary Strings XII–XIV'ün hiçbir
   modeli, kilidi ya da ansatz'ı bu mektuba girmez. Bu yüzden ayrı sunulur.
 
 ## İçerik
 
 | Dosya | Açıklama |
 |---|---|
-| `paper/na22_positronium_lab_test_EN.tex` | Mektup, İngilizce (Tablo 1, 6 bölüm) |
-| `paper/na22_positronium_lab_test_TR.tex` | Türkçe sürüm |
+| `paper/stationary_strings_L1_na22_EN.tex` | Mektup, İngilizce (Tablo 1, 6 bölüm) |
+| `paper/stationary_strings_L1_na22_TR.tex` | Türkçe sürüm |
 | `CITATION.cff` | Atıf kaydı |
 | `LICENSE` | CC BY 4.0 |
 
@@ -53,7 +53,7 @@ hesaplar.
   author = {Fahri Meral},
   title  = {Üç-Foton Pozitronyum Spektrumu: arXiv:2605.21289 Denk. (12)'nin Düzeltmesi ve Bir Saatlik Laboratuvar Testi},
   year   = {2026},
-  url    = {https://github.com/fahrim/grand-proof-l1-na22}
+  url    = {https://github.com/fahrim/stationary-strings-l1}
 }
 ```
 
