@@ -8,7 +8,7 @@
 
 Yazar: Fahri Meral · Tarih: 20 Ekim 2026 · Sürüm: v1 (SS-L1)
 
-> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *Zenodo DOI'si yüklemeyi bekliyor.*
+> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517487-blue.svg)](https://doi.org/10.5281/zenodo.23517487)*
 
 ## Tek paragrafta iddia
 arXiv:2605.21289'un Denk. (12)'nde yayımlanan orto-pozitronyum üç-foton
@@ -54,6 +54,7 @@ hesaplar.
   title  = {Üç-Foton Pozitronyum Spektrumu: arXiv:2605.21289 Denk. (12)'nin Düzeltmesi ve Bir Saatlik Laboratuvar Testi},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-l1}
+  doi    = {10.5281/zenodo.23517487},
 }
 ```
 

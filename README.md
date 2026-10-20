@@ -8,7 +8,7 @@
 
 Author: Fahri Meral · Date: October 20, 2026 · Version: v1 (SS-L1)
 
-> **Status:** Unpublished preprint (v1). Not peer-reviewed. *Zenodo DOI pending deposit.*
+> **Status:** Unpublished preprint (v1). Not peer-reviewed. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517487-blue.svg)](https://doi.org/10.5281/zenodo.23517487)*
 
 ## The claim in one paragraph
 
@@ -56,6 +56,7 @@ the detected counts and the separation statistics.
   title  = {The Three-Photon Positronium Spectrum: a Correction to arXiv:2605.21289 Eq. (12) and a One-Hour Laboratory Test},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-l1}
+  doi    = {10.5281/zenodo.23517487},
 }
 ```
 
