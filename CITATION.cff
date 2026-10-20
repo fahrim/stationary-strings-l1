@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "The Three-Photon Positronium Spectrum: a Correction to arXiv:2605.21289 Eq. (12) and a One-Hour Laboratory Test"
+message: "If you use this work, please cite it."
+type: unpublished
+authors:
+  - family-names: Meral
+    given-names: Fahri
+date-released: 2026-10-20
+version: v1
+repository-code: "https://github.com/fahrim/grand-proof-l1-na22"
+license: CC-BY-4.0
+keywords:
+  - positronium
+  - three-photon annihilation
+  - Ore-Powell spectrum
+  - sodium-22
+  - HPGe gamma spectroscopy
+  - INTEGRAL SPI
+  - 511 keV line
