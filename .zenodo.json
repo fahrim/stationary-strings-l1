@@ -3,7 +3,8 @@
   "description": "Letter (October 2026) showing that the ortho-positronium three-photon spectral shape published as Eq. (12) of arXiv:2605.21289 is the log-free 1949 Ore-Powell expression, is unnormalised (integral 2343.47 instead of 1) and diverges as E^-2 at low energy, while the corrected form with the original ln(1-x) factors is exactly normalised (integral 1 to 5e-13) and vanishes linearly. A proposed one-hour laboratory test with a 5 uCi sodium-22 source, a silica aerogel and a small HPGe detector separates the two forms by more than 7.8e5 standard deviations in the band ratio N[10,100]/N[350,490]; the published form predicts 5671 times more low-energy counts. The measurement is proposed, not performed, and the letter is independent of the Stationary-String series. Full letter in English and Turkish; numerical machinery released with the solver.",
   "creators": [
     {
-      "name": "Meral, Fahri"
+      "name": "Meral, Fahri",
+      "orcid": "https://orcid.org/0009-0004-2287-2376"
     }
   ],
   "license": {
