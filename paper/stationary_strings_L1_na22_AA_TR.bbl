@@ -1,0 +1,17 @@
+\begin{thebibliography}{4}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Group(1995)}]{ps95}
+Group, P.~W. 1995, Prog.\ Part.\ Nucl.\ Phys.\ 17, 219
+
+\bibitem[{Ore \& Powell(1949)}]{ore49}
+Ore, A. \& Powell, J.~L. 1949, Phys.\ Rev.\ 75, 1696
+
+\bibitem[{Siegert \& Yoneda(2026)}]{sy26}
+Siegert, T. \& Yoneda, H. 2026 [\eprint[arXiv]{2605.21289}]
+
+\bibitem[{Yoneda {et~al.}(2025)Yoneda, Siegert, \& Mittal}]{yoneda25}
+Yoneda, H., Siegert, T., \& Mittal, S. 2025, Astron.\ Astrophys.\ 702, A220,
+  arXiv:2509.01066
+
+\end{thebibliography}
