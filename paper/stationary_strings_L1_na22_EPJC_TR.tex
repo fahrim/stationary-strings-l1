@@ -1,0 +1,206 @@
+% =====================================================================
+%  Stationary Strings Letter 1 (L1) -- European Physical Journal C TR surumu
+%
+%  Dergi  : The European Physical Journal C (EPJ C) -- tamamen ucretsiz.
+%  Sinif  : svjour3.cls (Springer Nature) + epj.bst
+%  Bu dosya, dergiye gonderilecek Ingilizce surumun (…_EPJC_EN.tex) birebir
+%  Turkce karsiligidir; sayilar, denklemler ve iddialar aynidir.
+%  EPJ yalnizca Ingilizce kabul eder: bu dosya yalnizca okunmak icindir.
+%
+%  Derleme: pdflatex -> bibtex -> pdflatex -> pdflatex
+% =====================================================================
+\documentclass[twocolumn]{svjour3}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage[breaklinks,colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\sloppy
+\setlength{\emergencystretch}{3em}
+
+\journalname{EPJ C}
+
+\begin{document}
+
+\title{Stationary Strings Mektup 1: Üç-Foton Pozitronyum Spektrumu ---
+arXiv:2605.21289 Denk.~(12)'nin Düzeltmesi ve Bir Saatlik Laboratuvar Testi}
+
+\author{Fahri Meral}
+
+\institute{Bağımsız Araştırmacı, E-posta: \email{fahrimeral@outlook.com},
+ORCID: 0009-0004-2287-2376}
+
+\begin{abstract}
+arXiv:2605.21289'da (Denk.~(12)) kullanılan orto-pozitronyum üç-foton
+spektral şekli, 1949 Ore--Powell ifadesinin logaritmasız (ln'siz) hâlidir
+ve fiziksel olarak tutarsızdır: normalize değildir
+($\int_1^{511}\allowbreak\Omega\,\mathrm{d}E = 2343.47$, $1$ olmalıdır) ve
+düşük enerji davranışı $E^{-2}$ olarak ıraksar; yani yok olması gereken
+foton sayısından fazlasını öngörür. Doğru ifade, 1949 makalesinin
+$\ln(1-x)$ çarpanlarını taşır, tam olarak normaldir
+($\int_0^{511}\allowbreak\Omega\,\mathrm{d}E = 1$, $5\times10^{-13}$
+hassasiyetle) ve $x = E/m_e \to 0$ iken $\Omega(x)\sim\tfrac{5}{3}x$ ile
+sönümlenir. $5\,\mu$Ci $^{22}$Na kaynağı, silika aerojel ve küçük bir HPGe
+dedektörle yapılacak \emph{tek saatlik} bir ölçümün iki formu
+$7\times10^{5}$'den büyük standart sapma ile ayırdığını gösteriyoruz;
+yani düzeltme doğrudan bir laboratuvar tezgâhında sınanabilir. Burada
+raporlanan ölçüm \emph{yapılmamıştır, önerilmiştir}: aşağıdaki sayılar
+protokolün öngörülen sonucudur ve düzeltmenin kendisi için kanıt,
+yayımlanmış denklemin 1949 aslına karşı kaynak metni denetimidir.
+Protokolün tamamı, üç aday spektrum ve tüm sayısal makine bu mektupla
+birlikte yayımlanmaktadır.
+\end{abstract}
+
+\keywords{pozitronyum, üç-foton annihilasyon, 511 keV çizgisi,
+Ore--Powell spektrumu, gama ışını spektroskopisi, INTEGRAL/SPI}
+
+\maketitle
+
+\section{Sorun}
+Ortoogonal-pozitronyumun (o-Ps) üç-foton spektral şekli
+$\Omega(E_{\rm em}/m_e)$, arXiv:2605.21289'daki~\cite{sy26} ekstragalaktik
+511~keV çizgisi modelinde spektral şekil üzerinden girer. Yayımlanan
+Denk.~(12) şu ifadedir:
+\begin{equation}
+\label{eq:pub}
+\begin{split}
+\Omega(E) = \frac{2}{m_e(\pi^2-9)}\biggl[&
+\frac{E(m_e-E)}{(2m_e-E)^2} \\
+&+ \frac{2m_e-E}{E} + \frac{2m_e(m_e-E)}{E^2} \\
+&- \frac{2m_e(m_e-E)^2}{(2m_e-E)^3}\biggr],
+\end{split}
+\end{equation}
+$m_e = 511$~keV ile. Bu, 1949 Ore--Powell ifadesinin ln'siz
+varyantıdır~\cite{ore49}: aslında taşıdığı $\ln(1-x)$ çarpanları
+yoktur. İki bağımsız belirti doğar ve ikisi de nicel kullanım için
+ölümcüldür:
+\begin{enumerate}
+    \item \emph{Normalizasyon.} Denk.~\eqref{eq:pub} yerine konduğunda
+    $\int_{1}^{511}\allowbreak\Omega\,\mathrm{d}E = 2343.47$ çıkar, $1$ değil.
+    İntegrali kendi normalizasyonunun üç büyüklük mertebesi kadar
+    aşan bir spektral şekil olasılık yoğunluğu olamaz.
+    \item \emph{Düşük-enerji ıraksaması.} Üçüncü terim $2m_e^2/E^2$
+    gibi davranır: şekil $E\to 0$ iken karesel ıraksar, oysa üç-foton
+    faz uzayı orada sönümlenmek zorundadır. Doğru ifade ise
+    $\Omega(x)\sim\tfrac{5}{3}x$, yani $O(E)\propto E$ sağlar.
+\end{enumerate}
+Fiziksel olarak doğru form, üçüncü ve dördüncü terimleri
+\begin{equation}
+\label{eq:corr}
+\begin{split}
+&\frac{2m_e(m_e-E)}{(2m_e-E)^2}
+- \frac{2m_e(m_e-E)^2}{(2m_e-E)^3}
+\ \longrightarrow\ \\
+&\frac{2m_e(m_e-E)}{E^2}
+- \frac{2m_e(m_e-E)^2}{(2m_e-E)^3} \\
+&\ +\ \ln(1-x)\ \text{çarpanları},
+\end{split}
+\end{equation}
+şeklinde düzeltir; yani 1949 ifadesinin $\ln(1-x)$ çarpanları geri
+konmuş hâlidir: tam olarak normaldir
+($\int_0^{511}\allowbreak\Omega\,\mathrm{d}E = 1$, $5\times10^{-13}$ hassasiyetle)
+ve $E\to 0$'da sönümlenir. Kısmi bir onarım --- yalnız üçüncü
+terimde $E^2 \to (2m_e-E)^2$ ikamesi --- ikinci terimin $1/E$ kutbunu
+bırakır ve $\int_{1}^{511}\Omega\,\mathrm{d}E = 27.147$ verir; o da $1$
+değildir.
+
+\section{Bu neden tek bir denklemden ibaret değil}
+511~keV çizgi şekli, difüz pozitron annihilation akısını haritalamak ve
+karanlık madde annihilation kanallarına kısıtlar koymak için
+kullanılır~\cite{sy26,yoneda25}. Yanlış bir spektral şekil, doğrudan
+çıkarılan akıya ve buradan türetilen karanlık madde sınırlarına birim
+mertebesinde hata olarak yayılır. Hata kozmetik değildir: yayımlanmış bir
+astrofizik çıkarımda birim mertebesinde hatadır ve normalizasyon
+kontrol edilmedikçe görünmez.
+
+\section{Bir saatlik laboratuvar testi}
+Üç aday şekil bir bant-oranı ölçümüyle ayrılır. $5\,\mu$Ci
+($1.85\times10^5$ Bq) $^{22}$Na kaynağı, silika aerojel hedef
+($f_{\rm Ps} = 0.55$), katı açı $\times$ verim $\epsilon = 0.02$ ve
+$3600$~s toplama süresi, $\sigma = 0.85$~keV'lik bir HPGe ile
+(511~keV'de FWHM $\approx 2.00$~keV) alınır. Dedekte edilen üç-foton
+sayısı
+$N_{3\gamma} = A f_{\beta^+} f_{\rm Ps} \tfrac{3}{4}\epsilon\,t = 4.96\times 10^{6}$
+ve ayırt edici büyüklük, spektral şeklin kendisine ait olan bant oranıdır:
+$R = N_{[10,100]}/N_{[350,490]}$.
+
+\begin{table}[!htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{1.5pt}
+\caption{\textbf{Üç aday spektrum için bir saatlik ölçümün öngörülen sonucu.}
+Ölçüm yapılmamıştır; bunlar protokolün öngörüleridir. Yalnız Poisson
+hataları.}
+\label{tab:na22}
+\vspace{0.1cm}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Form & $N_{[10,100]}$ & $N_{[350,490]}$ & $R$ \\
+\midrule
+Düzeltilmiş 1949 (exact) & $1.847\times 10^{5}$ & $2.195\times 10^{6}$ & $0.08414\pm 0.00020$ \\
+Yayımlanan (ln'siz) & $1.047\times 10^{9}$ & $6.570\times 10^{6}$ & $159.37\pm 0.06$ \\
+Kısmi onarım & $5.112\times 10^{7}$ & $5.494\times 10^{6}$ & $9.305\pm 0.004$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Ayrım kesindir: düzeltilmiş ve yayımlanan formlar $R$'de
+$7.8\times 10^{5}$ standart sapma ile ayrılır; ayrıca yayımlanan form
+düşük-enerji bandında düzeltilmiş formdan $5.67\times 10^{3}$ kat fazla
+sayım öngörür --- tek başına $2.4\times10^{6}\,\sigma$'luk bir fazlalık ve
+gerçekçi hiçbir dedektörü doyuracak bir sayım hızı. Bir dakikalık
+toplama bile $10^{5}\,\sigma$ mertebesinde ayrımı korur. Banddaki
+baskın fiziksel arka plan sınanan üç-foton kontinuumunun kendisidir;
+bu yüzden ayırt edici büyüklük alışılmış anlamda arka planla
+sınırlı değildir. Artık arka planda on kat belirsizlik olsa bile ayrım
+$10^{4}\,\sigma$'nun üzerindedir.
+
+\section{Ne iddia ediliyor, ne edilmiyor}
+Düzeltmenin kanıtı bir \emph{kaynak denetimidir}: yayımlanmış denklem
+terim terim 1949 aslıyla ve literatürdeki bağımsız kontrollerle
+karşılaştırılmıştır. Burada önerilen laboratuvar testi bu denetimin
+çürütme testidir ve \emph{yapılmamıştır}; yürütülebilmesi ve
+karşılaştırılabilmesi için öngörülen sonucu raporluyoruz. Bu mektubun
+hiçbir iddiası, serinin modeline bağlı değildir; bu yüzden seriden ayrı
+olarak sunulmaktadır.
+
+\section{Yeniden-üretilebilirlik}
+Tüm makine bu mektupla birlikte yayımlanmıştır: üç spektral şekil, bant
+integralleri, dedekte edilen sayım ve ayrım hesabı ve bağımsız sayısal
+kontroller (exact formun integrali $5\times10^{-13}$ ile $1$'e eşittir ve
+düşük-enerji davranışının $E$'ye doğrusal olduğu doğrulanır).
+Çalıştırma talimatları ek depoların README dosyasındadır.
+
+\section*{Beyanlar}
+
+\textbf{Fonlama.} Yazar, bu makalenin hazırlanması için hiçbir fon, hibe
+veya başka destek almadığını beyan eder.
+
+\textbf{Çıkar çatışması.} Yazar hiçbir çıkar çatışması olmadığını beyan eder.
+
+\textbf{Yazar katkısı (CRediT).} Kavramsallaştırma: Fahri Meral. Yöntem:
+Fahri Meral. Yazılım: Fahri Meral. Biçimsel analiz: Fahri Meral. Araştırma:
+Fahri Meral. Yazım — özgün taslak: Fahri Meral. Yazım — gözden geçirme ve
+düzenleme: Fahri Meral. Görselleştirme: Fahri Meral. Kaynaklar: Fahri Meral.
+Denetim: Fahri Meral. Fon sağlama: uygulanamaz.
+
+\textbf{Yapay zekâ destekli teknolojiler.} Bu çalışmanın hazırlanmasında
+yapay zekâ araçları kullanıldı — kod yazımı, sayısal analiz desteği ve dil
+düzenleme dâhil — yazarın yönlendirmesi ve gözetimi altında. Burada
+raporlanan tüm sonuçlar yazar tarafından yayımlanan kodla karşılaştırılarak
+doğrulanmıştır ve makalenin içeriğinden tamamen yazar sorumludur.
+
+\textbf{Veri erişilebilirliği.} Tüm sayısal sonuçlar, üç aday spektrum, bant
+integralleri ve bunları yeniden üretmek için gereken doğrulama kodu
+\url{https://doi.org/10.5281/zenodo.23517487} (bu mektup) ve
+\url{https://doi.org/10.5281/zenodo.23408253} (çözücü ve bağımsız
+çapraz-denetim paketi) adreslerinde yayımlanmıştır. Kaynak deposu:
+\url{https://github.com/fahrim/stationary-strings-v}.
+
+\nocite{ps95}
+
+\bibliographystyle{epj}
+\bibliography{refs}
+
+\end{document}
+

@@ -1,0 +1,222 @@
+% =====================================================================
+%  Stationary Strings Letter 1 (L1) -- European Physical Journal C surumu
+%
+%  Dergi  : The European Physical Journal C (EPJ C) -- tamamen ucretsiz
+%           ("free to publish open access in this journal"); yazar odemesi yok.
+%  Sinif  : svjour3.cls (Springer Nature) + epj.bst
+%  Format : EPJ C kurallari -- ozet 150-250 kelime, "Statements and
+%           Declarations" basligi zorunlu, onbölümdekiler ve PDF birlikte.
+%
+%  Sayilar, denklemler ve iddialar bu surumde DEGISMEMISTIR; yalnizca
+%  bicim (sinif, onbolum, kaynakca stili, beyan blogu) degistirilmistir.
+%
+%  Derleme: pdflatex -> bibtex -> pdflatex -> pdflatex
+% =====================================================================
+\documentclass[twocolumn]{svjour3}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage[breaklinks,colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\sloppy
+\setlength{\emergencystretch}{3em}
+
+\journalname{EPJ C}
+
+\begin{document}
+
+\title{Stationary Strings Letter 1: The Three-Photon Positronium Spectrum ---
+a Correction to arXiv:2605.21289 Eq.~(12) and a One-Hour Laboratory Test}
+
+\author{Fahri Meral}
+
+\institute{Independent Researcher, E-mail: \email{fahrimeral@outlook.com},
+ORCID: 0009-0004-2287-2376}
+
+\begin{abstract}
+The ortho-positronium three-photon spectral shape used in
+arXiv:2605.21289 (Eq.~(12)) is the log-free Ore--Powell expression of
+1949, and it is physically inconsistent: it is unnormalised
+($\int_1^{511}\allowbreak\Omega\,\mathrm{d}E = 2343.47$ instead of $1$), and its
+low-energy behaviour diverges as $E^{-2}$, so it predicts more
+low-energy photons than the annihilation can produce. The correct
+expression carries the $\ln(1-x)$ factors of the original paper,
+is exactly normalised ($\int_0^{511}\allowbreak\Omega\,\mathrm{d}E = 1$ to
+$5\times 10^{-13}$) and vanishes as $\Omega(x)\sim\tfrac{5}{3}x$ at
+$x=E/m_e\to 0$. We show that a single one-hour measurement with a
+$5\,\mu$Ci $^{22}$Na source, a silica aerogel and a small HPGe
+detector separates the two forms by more than $7\times 10^{5}$
+standard deviations, so the correction is directly testable on a
+laboratory bench. The measurement reported here is \emph{proposed, not
+performed}: the numbers below are the predicted outcome of the
+protocol, and the evidence for the correction itself is a source-text
+audit of the published equation against the 1949 original. The
+protocol, the three candidate spectra and the complete numerical
+machinery are released with this letter.
+\end{abstract}
+
+\keywords{positronium, three-photon annihilation, 511 keV line,
+Ore--Powell spectrum, gamma-ray spectroscopy, INTEGRAL/SPI}
+
+\maketitle
+
+\section{The problem}
+The three-photon spectrum of ortho-positronium (o-Ps) enters the
+extragalactic 511~keV line modelling of
+arXiv:2605.21289~\cite{sy26} through its spectral shape
+$\Omega(E_{\rm em}/m_e)$. The published Eq.~(12) of that work reads
+\begin{equation}
+\label{eq:pub}
+\begin{split}
+\Omega(E) = \frac{2}{m_e(\pi^2-9)}\biggl[&
+\frac{E(m_e-E)}{(2m_e-E)^2} \\
+&+ \frac{2m_e-E}{E} + \frac{2m_e(m_e-E)}{E^2} \\
+&- \frac{2m_e(m_e-E)^2}{(2m_e-E)^3}\biggr],
+\end{split}
+\end{equation}
+with $m_e = 511$~keV. This is the log-free variant of the 1949
+Ore--Powell expression~\cite{ore49}: the factors
+$\ln(1-x)$ that the original carries are absent. Two independent
+symptoms follow, and both are fatal for any quantitative use:
+\begin{enumerate}
+    \item \emph{Normalisation.} Evaluating Eq.~\eqref{eq:pub} gives
+    $\int_{1}^{511}\Omega\,\mathrm{d}E = 2343.47$, not $1$. A spectral
+    shape whose integral exceeds its own normalisation by three orders
+    of magnitude cannot be a probability density.
+    \item \emph{Low-energy divergence.} The third term behaves as
+    $2m_e^2/E^2$: the shape diverges quadratically as $E\to 0$, while
+    the three-photon phase space must vanish there. The exact
+    expression instead satisfies $\Omega(x)\sim\tfrac{5}{3}x$, i.e.\
+    $O(E)\propto E$.
+\end{enumerate}
+The physically correct form replaces the third and fourth terms by
+\begin{equation}
+\label{eq:corr}
+\begin{split}
+&\frac{2m_e(m_e-E)}{(2m_e-E)^2}
+- \frac{2m_e(m_e-E)^2}{(2m_e-E)^3}
+\ \longrightarrow\ \\
+&\frac{2m_e(m_e-E)}{E^2}
+- \frac{2m_e(m_e-E)^2}{(2m_e-E)^3}
+\ +\ \ln(1-x)\ \text{factors},
+\end{split}
+\end{equation}
+i.e.\ the original 1949 expression with the
+$\ln(1-x)$ multipliers restored, which is exactly normalised
+($\int_0^{511}\allowbreak\Omega\,\mathrm{d}E = 1$ to $5\times10^{-13}$) and
+vanishes at $E\to 0$. A partial repair --- substituting
+$E^2\to(2m_e-E)^2$ in the third term only --- still leaves the
+$1/E$ pole of the second term and yields
+$\int_{1}^{511}\Omega\,\mathrm{d}E = 27.147$, also not $1$.
+
+\section{Why this matters beyond one equation}
+The 511~keV line shape is used to map the diffuse positron
+annihilation flux and to constrain dark-matter annihilation
+channels~\cite{sy26,yoneda25}. A wrong spectral shape propagates
+directly into the inferred flux and into the derived dark-matter
+limits. The error is thus not cosmetic: it is a factor of order
+unity in a published astrophysical inference, and it is invisible
+unless one checks the normalisation.
+
+\section{A one-hour laboratory test}
+The three candidate shapes are separated by a band-ratio measurement.
+We take a $5\,\mu$Ci ($1.85\times 10^{5}$ Bq) $^{22}$Na source,
+a silica aerogel target ($f_{\rm Ps} = 0.55$), a solid-angle
+times efficiency factor $\epsilon = 0.02$ and an acquisition time
+of $3600$~s, recorded with an HPGe detector of
+$\sigma = 0.85$~keV (FWHM $\approx 2.00$~keV at 511~keV). The
+detected three-photon count is
+$N_{3\gamma} = A f_{\beta^+} f_{\rm Ps} \tfrac{3}{4}\epsilon\,t = 4.96\times 10^{6}$,
+and the discriminating statistic is the ratio of the low-energy and
+high-energy bands,
+$R = N_{[10,100]}/N_{[350,490]}$, whose value is a property of the
+spectral shape alone.
+
+\begin{table}[!htbp]
+\centering\scriptsize
+\setlength{\tabcolsep}{2pt}
+\caption{\textbf{Predicted one-hour outcome for the three candidate spectra.}
+The measurement has not been performed; these are the protocol's
+predictions. Poisson errors only.}
+\label{tab:na22}
+\vspace{0.1cm}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Form & $N_{[10,100]}$ & $N_{[350,490]}$ & $R$ \\
+\midrule
+Corrected 1949 (exact) & $1.847\times 10^{5}$ & $2.195\times 10^{6}$ & $0.08414\pm 0.00020$ \\
+Published (log-free) & $1.047\times 10^{9}$ & $6.570\times 10^{6}$ & $159.37\pm 0.06$ \\
+Partial repair & $5.112\times 10^{7}$ & $5.494\times 10^{6}$ & $9.305\pm 0.004$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The separation is decisive: the corrected and the published forms
+differ by $7.8\times 10^{5}$ standard deviations in $R$, and the
+published form additionally predicts $5.67\times 10^{3}$ times more
+low-energy counts than the corrected one --- an excess of
+$2.4\times 10^{6}\,\sigma$ in the low band alone, and a count rate
+that would saturate any realistic detector. Even a one-minute
+acquisition retains a separation of order $10^{5}\,\sigma$, and
+the low-energy band receives no contribution from the direct
+two-photon 511~keV line, whose spectrum is a narrow peak. The
+dominant physical background in the band is the very three-photon
+continuum under test, so the discriminant is not background-limited
+in the usual sense; a factor-of-ten uncertainty on any residual
+background leaves the separation above $10^{4}\,\sigma$.
+
+\section{What is claimed, and what is not}
+The evidence for the correction is a \emph{source audit}: the
+published equation was compared, term by term, with the 1949 original
+and with the independent checks available in the literature. The
+laboratory test proposed here is a falsification test of that audit
+and has \emph{not} been performed; we report the predicted
+outcome so that the test can be executed and compared against.
+Nothing in this letter depends on any model of the present series,
+which is why it is submitted separately from it.
+
+\section{Reproducibility}
+The complete machinery is released with this letter: the three
+spectral shapes, the band integrals, the detected-count and
+separation calculation, and the independent numerical checks
+(the exact form's integral equals $1$ to $5\times 10^{-13}$, and
+its low-energy behaviour is verified to be linear in $E$).
+Execution instructions are given in the accompanying repository.
+
+\section*{Statements and Declarations}
+
+\textbf{Funding.} The author declares that no funds, grants or other
+support were received for the preparation of this manuscript.
+
+\textbf{Competing interests.} The author declares no competing
+interests.
+
+\textbf{Author contributions (CRediT).} Conceptualization: Fahri
+Meral. Methodology: Fahri Meral. Software: Fahri Meral. Formal
+analysis: Fahri Meral. Investigation: Fahri Meral. Writing ---
+original draft: Fahri Meral. Writing --- review and editing: Fahri
+Meral. Visualization: Fahri Meral. Resources: Fahri Meral.
+Supervision: Fahri Meral. Funding acquisition: not applicable.
+
+\textbf{AI-assisted technologies.} AI tools were used in the
+preparation of this work --- including for code drafting, numerical
+analysis support and language editing --- under the author's
+direction and supervision. All results reported here were verified
+by the author against the released code, and the author takes full
+responsibility for the content of the article.
+
+\textbf{Data availability.} All numerical results, the three candidate
+spectra, the band integrals and the verification code needed to
+reproduce them are available at
+\url{https://doi.org/10.5281/zenodo.23517487} (this letter) and
+\url{https://doi.org/10.5281/zenodo.23408253} (solver and
+independent cross-check suite). The source repository is
+\url{https://github.com/fahrim/stationary-strings-v}.
+
+\nocite{ps95}
+
+\bibliographystyle{epj}
+\bibliography{refs}
+
+\end{document}
